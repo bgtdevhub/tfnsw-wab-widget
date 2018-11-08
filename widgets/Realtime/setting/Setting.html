@@ -1,0 +1,24 @@
+<div>
+  <div>
+    <div style="padding-top: 10px; padding-bottom: 25px;">
+        <label style="font-weight: bold;">${nls.titleLabel}</label>
+        <input data-dojo-attach-point="widgetTitle" style="width: 300px; height: 30px; font-size: 15px;">
+    </div>
+
+    <div>
+      <div>Webmap contains TfNSW realtime vehicle position layer?</div>
+      <div style="padding-top: 10px; padding-bottom: 10px">
+        <input type="radio" name="haveLayerRadio" data-dojo-attach-point="haveLayerYes">
+        <label data-dojo-attach-point="haveLayerYesLabel">Yes</label>&nbsp;&nbsp;
+        <input type="radio" name="haveLayerRadio" data-dojo-attach-point="haveLayerNo">
+        <label data-dojo-attach-point="haveLayerNoLabel">No</label>
+      </div>
+
+      <div data-dojo-attach-point="defaultLayerNotification" style="font-weight: bold; font-size: 13px;">* A default TfNSW Realtime vehicle position layer will be loaded.</div>
+      <div data-dojo-attach-point="layerSelection" class="hidden">
+        <label style="font-weight: bold; font-size: 15px;">${nls.realTimeLayerLabel}</label>
+        <select data-dojo-attach-point="layerId" style="width: 400px; height: 30px; font-size: 15px;"></select>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,106 @@
+/* color definition */
+.tooltip {
+  position: relative; }
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  width: 100px;
+  height: 25px;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  line-height: 2.2;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  font-size: 12px;
+  bottom: -80%;
+  left: -70%;
+  transition: opacity .2s; }
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent gray transparent; }
+
+.tooltip:hover .tooltiptext {
+  opacity: 1; }
+
+.realtime .header {
+  font-size: 1.5em;
+  font-weight: 700;
+  left: 4.5%;
+  letter-spacing: 0.5px;
+  color: #4b4b4b;
+  padding-top: 0.5rem;
+  padding-bottom: .9rem;
+  padding-left: .9rem;
+  border-bottom: solid 1px rgba(120, 204, 238, 0.6); }
+
+.realtime .transport-selection {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-evenly; }
+  .realtime .transport-selection .type {
+    color: #fff;
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    cursor: pointer;
+    backface-visibility: hidden;
+    background-color: rgba(218, 218, 218, 0.5);
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    border: solid 3px transparent;
+    transition: all .3s ease; }
+    .realtime .transport-selection .type-nswtrains:hover {
+      border: solid 3px #dd3f1d; }
+    .realtime .transport-selection .type-buses:hover {
+      border: solid 3px #009ed7; }
+    .realtime .transport-selection .type-ferries:hover {
+      border: solid 3px #009e4d; }
+    .realtime .transport-selection .type-lightrails:hover {
+      border: solid 3px #e4022d; }
+    .realtime .transport-selection .type-sydneytrains:hover {
+      border: solid 3px #ec6606; }
+
+.realtime .nswtrains {
+  background-color: #dd3f1d !important; }
+
+.realtime .buses {
+  background-color: #009ed7 !important; }
+
+.realtime .ferries {
+  background-color: #009e4d !important; }
+
+.realtime .lightrails {
+  background-color: #e4022d !important; }
+
+.realtime .sydneytrains {
+  background-color: #ec6606 !important; }
+
+.realtime .transport-congestion-level {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-evenly; }
+  .realtime .transport-congestion-level .congestion-label {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 2; }
+  .realtime .transport-congestion-level .congestion-selection {
+    width: 60%;
+    height: 30px; }
+
+/*# sourceMappingURL=style.css.map */

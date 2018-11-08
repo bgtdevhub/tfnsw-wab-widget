@@ -1,0 +1,39 @@
+<div>
+
+  <div class="header">${config.widgetTitle}</div>
+
+  <div class="transport-selection">
+    <div class="type type-nswtrains nswtrains tooltip" data-dojo-attach-event="click:_toggleVisible">
+      N
+      <span class="tooltiptext">NSW trains</span>
+    </div>
+    <div class="type type-buses buses tooltip" data-dojo-attach-event="click:_toggleVisible">
+      B
+      <span class="tooltiptext">Buses</span>
+    </div>
+    <div class="type type-ferries ferries tooltip" data-dojo-attach-event="click:_toggleVisible">
+      F
+      <span class="tooltiptext">Ferries</span>
+    </div>
+    <div class="type type-lightrails lightrails tooltip" data-dojo-attach-event="click:_toggleVisible">
+      L
+      <span class="tooltiptext">Lightrails</span>
+    </div>
+    <div class="type type-sydneytrains sydneytrains tooltip" data-dojo-attach-event="click:_toggleVisible">
+      S
+      <span class="tooltiptext">Sydney Trains</span>
+    </div>
+  </div>
+
+  <div class="transport-congestion-level">
+      <label class="congestion-label">Congestion</label>
+      <select data-dojo-attach-event="change:_selectCongestionLevel" class="congestion-selection">
+        <option value="ALL_CONGESTION_LEVELS">All Congestion Levels</option>
+        <option value="UNKNOWN_CONGESTION_LEVEL">Unknown Congestion Level</option>
+        <option value="RUNNING_SMOOTHLY">Running Smoothly</option>
+        <option value="STOP_AND_GO">Stop and Go</option>
+        <option value="CONGESTION">Congestion</option>
+        <option value="SEVERE_CONGESTION">Severe Congestion</option>
+      </select>
+  </div>
+</div>
