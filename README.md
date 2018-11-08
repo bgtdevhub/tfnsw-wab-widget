@@ -9,15 +9,19 @@ These instructions will get you a copy of the project up and running on your loc
 ```
 npm install
 ```
+
 Change these two lines in Gruntfile.js
 
 var appDir = '<Your WAB DE Directory>/server/apps/2';
+
 var stemappDir = '<Your WAB DE Directory>/client/stemapp';
+
 
 After the change
 
 ```
 grunt
 ```
+
 Grunt will run the compilation task and copy the source into the stem app and app directory.
 
