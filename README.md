@@ -2,6 +2,8 @@
 
 A Transport for New South Wales Real time Vehicle position WAB widget.
 
+View the widget [live](https://www.bgtdevhub.com/TfNSW/index.html)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
